@@ -11,6 +11,7 @@ import { AuthProvider } from '../providers/auth/auth';
 // Importing AF2 Module
 import { AngularFireModule } from 'angularfire2';
 import { AngularFireAuthModule } from 'angularfire2/auth';
+import { Facebook } from '@ionic-native/facebook'
 
 // AF2 Settings
 const firebaseConfig = {
@@ -42,7 +43,8 @@ const firebaseConfig = {
     StatusBar,
     SplashScreen,
     {provide: ErrorHandler, useClass: IonicErrorHandler},
-    AuthProvider
+    AuthProvider, 
+    Facebook
   ]
 })
 export class AppModule {}
